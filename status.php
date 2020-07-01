@@ -192,14 +192,14 @@ curl_close($curl);
 ?>
 <body>
 
-
-<div class="container well">
 <nav class="navbar navbar-light bg-light">
   <form class="form-inline">
     <a href="index.php"><button class="btn btn-outline-success" type="button">Monitor Sensors</button></a>
     <a href="status.php" ><button class="btn btn-outline-success" type="button">Monitor Actuators</button></a>
   </form>
 </nav>
+<div class="container well">
+
 <h1 class="text-center mb-5 mt-5">Monitoring Actuator Status</h1>
 <div class="row  card card-body bg-light mt-4">
 <div class="col-12">
@@ -207,6 +207,7 @@ curl_close($curl);
 </div>
 </div>
 <div class=" card card-body bg-light mt-4">
+<h3 class="mt-2 text-center">Set Actuators</h3>
 <div class="row mt-5 ">
 <div class="col-md-4">
 <h3 class="text-center">Led Status</h3>
@@ -239,7 +240,7 @@ curl_close($curl);
 <div class="row mt-5">
 <div class="col-md-4">
 <p>Set LED State</p>
-  <input type="radio" id="male" name="ledState" value="1">
+  <input type="radio" id="male" name="ledState" value="1" required>
   <label for="male">ON</label><br>
   <input type="radio" id="female" name="ledState" value="0">
   <label for="female">OFF</label><br>
@@ -249,7 +250,7 @@ curl_close($curl);
 
 <div class="col-md-4">
 <p>Set Fan State</p>
-  <input type="radio" id="male" name="fanState" value="1">
+  <input type="radio" id="male" name="fanState" value="1" required>
   <label for="male">ON</label><br>
   <input type="radio" id="female" name="fanState" value="0">
   <label for="female">OFF</label><br>
@@ -265,7 +266,7 @@ curl_close($curl);
 
 <div class="col-md-4">
 <p>Set Pump State</p>
-  <input type="radio" id="male" name="pumpState" value="1">
+  <input type="radio" name="pumpState" value="1" required>
   <label for="male">ON</label><br>
   <input type="radio" id="female" name="pumpState" value="0">
   <label for="female">OFF</label><br>

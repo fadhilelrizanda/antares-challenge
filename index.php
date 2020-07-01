@@ -125,12 +125,14 @@ curl_close($curl);
 <body>
 <nav class="navbar navbar-light bg-light">
   <form class="form-inline">
-    <a href="index.php"><button class="btn btn-outline-success" type="button">Main button</button></a>
-    <a href="status.php" ><button class="btn btn-outline-success" type="button">Main button</button></a>
+    <a href="index.php"><button class="btn btn-outline-success" type="button">Monitor Sensors</button></a>
+    <a href="status.php" ><button class="btn btn-outline-success" type="button">Monitor and setting actuators</button></a>
   </form>
 </nav>
-<h1>Test</h1>
+
 <div class="container wells ">
+<h1 class="mt-5 text-center">Monitor Sensors</h1>
+<h3 class="text-center mt-5">Humidity Sensors</h3>
 <div class="row mt-5">
 <div class="col-3">
 <button class="btn btn-info btn-block">Max: <?php echo $humidMax; ?></button>
@@ -150,6 +152,7 @@ curl_close($curl);
 <div class="row">
 <div class="col-12 card card-body bg-light mt-4"><canvas class="chart" id="lineChart"></canvas>
 </div></div>
+<h3 class="text-center mt-5">Temperature Sensors</h3>
 <div class="row mt-5">
 <div class="col-3">
 <button class="btn btn-info btn-block">Max: <?php echo $tempMax;?></button>
@@ -169,6 +172,7 @@ curl_close($curl);
 <div class="row">
 <div class="col-12 card card-body bg-light mt-4"><canvas id="lineChart2"></canvas>
 </div></div>
+<h3 class="text-center mt-5">Moisture Sensors</h3>
 <div class="row mt-5">
 <div class="col-3">
 <button class="btn btn-info btn-block">Max: <?php echo $moisMax; ?></button>
