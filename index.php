@@ -143,7 +143,7 @@ curl_close($curl);
 </div>
 
 <div class="col-3">
-<button class="btn btn-info btn-block">Average: <?echo $humidAverage;?></button>
+<button class="btn btn-info btn-block">Average: <?echo round($humidAverage,2);?></button>
 </div>
 <div class="col-3">
 <button class="btn btn-info btn-block">Last: <?php echo $lastHumid;?></button>
@@ -163,7 +163,7 @@ curl_close($curl);
 </div>
 
 <div class="col-3">
-<button class="btn btn-info btn-block">Average: <?php echo $tempAverage;?></button>
+<button class="btn btn-info btn-block">Average: <?php echo round($tempAverage,2);?></button>
 </div>
 <div class="col-3">
 <button class="btn btn-info btn-block">Last: <?php echo $lastTemp;?></button>
@@ -183,7 +183,7 @@ curl_close($curl);
 </div>
 
 <div class="col-3">
-<button class="btn btn-info btn-block">Average: <?php echo $moistureAverage; ?></button>
+<button class="btn btn-info btn-block">Average: <?php echo round($moistureAverage,2); ?></button>
 </div>
 
 <div class="col-3">
