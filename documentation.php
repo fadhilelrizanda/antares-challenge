@@ -34,9 +34,11 @@
   <form class="form-inline">
     <a href="index.php"><button class="btn btn-outline-success" type="button">Monitor Sensors</button></a>
     <a href="status.php" ><button class="btn btn-outline-success" type="button">Monitor and setting actuators</button></a>
+    <a href="documentation.php" ><button class="btn btn-outline-success" type="button">Documentations</button></a>
+
   </form>
 </nav>
-<div class="container card mt-4">
+<div class="container card mt-4 mb-5">
 <p class="text-center h1-judul">Documentation</p>
 <div class="row">
 <table class="table">
@@ -134,7 +136,7 @@
 </div>
 
 <h2 class="text-center mt-5">Actuators</h2>
-<div class="row">
+<div class="row mb-5">
 
 <div class="col-3">
 <div class="card card-body bg-light">
@@ -166,14 +168,14 @@
 <p class="text-center">LCD</p>
 </div>
 </div>
-
-
-
-
-
-
 </div>
 
+
+<h2 class="text-center">Github</h2>
+<p>Web App Monitor</p>
+<p>https://github.com/fadhilelrizanda/antares-challenge</p>
+<p class="mt-5">Microcontroller Code</p>
+<p>https://github.com/fadhilelrizanda/antares-challenge-micro</p>
 
 
 

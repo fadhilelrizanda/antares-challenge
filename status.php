@@ -194,8 +194,9 @@ curl_close($curl);
 
 <nav class="navbar navbar-light bg-light">
   <form class="form-inline">
-    <a href="index.php"><button class="btn btn-outline-success" type="button">Monitor Sensors</button></a>
-    <a href="status.php" ><button class="btn btn-outline-success" type="button">Monitor Actuators</button></a>
+  <a href="index.php"><button class="btn btn-outline-success" type="button">Monitor Sensors</button></a>
+    <a href="status.php" ><button class="btn btn-outline-success" type="button">Monitor and setting actuators</button></a>
+    <a href="documentation.php" ><button class="btn btn-outline-success" type="button">Documentations</button></a>
   </form>
 </nav>
 <div class="container well">
