@@ -330,7 +330,7 @@ function startRefresh() {
     });
 }
 $(function() {
-    setTimeout(startRefresh,5000);
+    setTimeout(startRefresh,20000);
 });
 
 

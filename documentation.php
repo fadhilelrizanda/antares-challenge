@@ -54,7 +54,7 @@
     <tr>
       <th scope="row">1</th>
       <td>Humid</td>
-      <td>(Humidity) Percentage of humidity that sensors read(in %)</td>
+      <td>(Humidity) Percentage of humidity that sensors read(in percentage)</td>
     
     </tr>
     <tr>

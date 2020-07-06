@@ -49,6 +49,7 @@ $stateJson = $stateJson["m2m:cin"]["con"];
 
 $actuatorStatus = json_decode($stateJson, true);
 
+if(isset($actuatorStatus["LED"])){
 $ledStatus =  $actuatorStatus["LED"];
 $fanStatus = $actuatorStatus["Fan"];
 $pumpStatus = $actuatorStatus["Pump"];
@@ -101,7 +102,7 @@ $colorPumpStatus ="btn-success";
 else{
   $pumpReport = "Error";
 }
-
+}
 ?>
 <?php
 
